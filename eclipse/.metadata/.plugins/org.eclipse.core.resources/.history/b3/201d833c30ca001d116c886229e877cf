@@ -1,0 +1,32 @@
+package shawty;
+
+public class passwd {
+
+	private boolean is_let(char c) {
+		return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+	}
+	
+	private boolean is_num(char c) {
+		return c >= '0' && c <= '9';
+	}
+	
+	
+	
+	final private int min_len = 8;
+	
+	boolean has_num,
+			has_low,
+			has_upp,
+			has_spe,
+			has_len;
+	
+	private void prüfePasswortSicherheit(String passwort) {
+		has_num = has_low = has_upp = has_spe = has_len = false;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package ligma;
+
+public class balls {
+	public static void main(String argv[]) {
+		String s = "Ronald McDonald";
+		
+		System.out.println(reverse_str(s));
+	}
+	
+	private static String reverse_str(String s) {
+		String ret = "";
+		
+		for (int i = s.length()-1; i > -1; i--)
+			System.out.println((int)s.charAt(i));
+		
+		return ret;
+	}
+}

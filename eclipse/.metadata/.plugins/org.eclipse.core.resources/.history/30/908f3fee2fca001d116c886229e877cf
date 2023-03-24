@@ -1,0 +1,24 @@
+package shawty;
+
+public class passwd {
+
+	private boolean is_num(char c) {
+		return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+	}
+	
+	String passwd;
+	boolean has_num,
+			has_low,
+			has_upp,
+			has_spe;
+	
+	private void check() {
+		has_num = has_low = has_upp = has_spe = false;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

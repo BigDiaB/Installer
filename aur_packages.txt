@@ -1,0 +1,3 @@
+epson-inkjet-printer-escpr
+epson-inkjet-printer-escpr2
+google-chrome

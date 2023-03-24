@@ -1,0 +1,16 @@
+package shawty;
+
+public class passwd {
+
+	String passwd;
+	
+	private void check() {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

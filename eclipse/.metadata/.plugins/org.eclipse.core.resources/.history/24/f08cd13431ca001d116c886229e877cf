@@ -1,0 +1,50 @@
+package shawty;
+
+public class passwd {
+
+	private int is_let(char c) {
+		if (c >= 'a' && c <= 'z') return 1; 
+		if (c >= 'A' && c <= 'Z') return 2;
+		return 0;
+	}
+	
+	private boolean is_num(char c) {
+		return c >= '0' && c <= '9';
+	}
+	
+	
+	
+	final private int min_len = 8;
+	
+	boolean has_num,
+			has_low,
+			has_upp,
+			has_spe,
+			has_len;
+	
+	private static void prüfePasswortSicherheit(String passwort) {
+		int nll, nul, nn, ns;
+		has_num = has_low = has_upp = has_spe = has_len = false;
+		nll = nul = nn = ns = 0;
+		has_len = passwort.length() >= min_len;
+		
+		for (int i = 0; i < passwort.length(); i++)
+		{
+			nn += is_num(passwort.charAt(i)) ? 1 : 0;
+			nll += is_let(passwort.charAt(i)) == 1 ? 1 : 0;
+			nul += is_let(passwort.charAt(i)) == 2 ? 1 : 0;
+			ns += (!is_num(passwort.charAt(i)) && is_let(passwort.charAt(i)) == 0) ? 1 : 0;
+		}
+		
+		System.out.println("Zahlen: " + nn);
+		System.out.println("Groß: " + nul);
+		System.out.println("Klein: " + nll);
+		System.out.println("Sonder: " + ns);
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		prüfePasswortSicherheit("Bälle 123");
+	}
+
+}
